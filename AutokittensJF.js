@@ -1,4 +1,4 @@
-// clone of /u/Quizer85's update found at http://pastebin.com/DeWPgtA3
+// JF clone of /u/Quizer85's update found at http://pastebin.com/DeWPgtA3
 function buildUI() {
   var tableContainer = document.createElement('div');
   tableContainer.id = 'timerTableContainer';
