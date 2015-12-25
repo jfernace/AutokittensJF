@@ -20,7 +20,7 @@ function buildUI() {
   uiContainer.style.display = 'none';
   uiContainer.style.overflow = 'auto';
   uiContainer.style.overflowY = 'scroll';
-  $('#gamePageContainer').append(uiContainer);
+  $('#headerLinks').append(uiContainer);
 
   var calcContainer = document.createElement('div');
   calcContainer.className = 'dialog help';
