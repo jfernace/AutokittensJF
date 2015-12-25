@@ -17,15 +17,15 @@ function buildUI() {
   var uiContainer = document.createElement('div');
   uiContainer.className = 'dialog help';
   uiContainer.id = 'autoOptions';
-  uiContainer.style.display = 'none';
-  uiContainer.style.overflowY = 'auto';
+  uiContainer.style.display = 'inherit';
+  uiContainer.style.overflowY = 'scroll';
   $('#gamePageContainer').append(uiContainer);
 
   var calcContainer = document.createElement('div');
   calcContainer.className = 'dialog help';
   calcContainer.id = 'kittenCalcs';
-  calcContainer.style.display = 'none';
-  calcContainer.style.overflowY = 'auto';
+  calcContainer.style.display = 'inherit';
+  calcContainer.style.overflowY = 'scroll';
   $('#gamePageContainer').append(calcContainer);
 }
 
@@ -118,7 +118,7 @@ function rebuildOptionsUI() {
   var percentages = [["1%", 0.01],["5%", 0.05],["10%", 0.1],["25%", 0.25],["50%", 0.5],["75%", 0.75],["80%", 0.8],["90%", 0.9],["95%", 0.95], ["98%", 0.98], ["99%", 0.99], ["99.5%", 0.995], ["99.9%", 0.999], ["100%", 1]];
   var faithPercentages = [["0%", 0], ["0.1%", 0.001]].concat(percentages);
   var uiContainer = prepareContainer('autoOptions');
-  addCheckbox(uiContainer, 'autoOptions', 'warnOnLeave', 'Warn before leaving the page,please');
+  addCheckbox(uiContainer, 'autoOptions', 'warnOnLeave', 'Warn before leaving the page');
   addTriggerCheckbox(uiContainer, 'autoOptions', 'widenUI', 'Make the game use more horizontal space (particularly useful for Grassy theme)', 'adjustColumns();');
   addCheckbox(uiContainer, 'autoOptions', 'autoStar', 'Automatically witness astronomical events');
   addCheckbox(uiContainer, 'autoOptions', 'autoCraft', 'Craft materials when storage is near limit');
