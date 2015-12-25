@@ -19,7 +19,7 @@ function buildUI() {
   uiContainer.id = 'autoOptions';
   uiContainer.style.display = 'none';
   uiContainer.style.overflowY = 'scroll';
-  $('#tooltip').append(uiContainer);
+  $('#gameLog').append(uiContainer);
 
   var calcContainer = document.createElement('div');
   calcContainer.className = 'dialog help';
@@ -119,7 +119,7 @@ function rebuildOptionsUI() {
   var faithPercentages = [["0%", 0], ["0.1%", 0.001]].concat(percentages);
   var uiContainer = prepareContainer('autoOptions');
   
-  addHeading(uiContainer,'v12.25.2015.1554')
+  addHeading(uiContainer,'v12.25.2015.1606')
   
   addCheckbox(uiContainer, 'autoOptions', 'warnOnLeave', 'Warn before leaving the page');
   addTriggerCheckbox(uiContainer, 'autoOptions', 'widenUI', 'Make the game use more horizontal space (particularly useful for Grassy theme)', 'adjustColumns();');
