@@ -18,7 +18,7 @@ function buildUI() {
   uiContainer.className = 'dialog help';
   uiContainer.id = 'autoOptions';
   uiContainer.style.display = 'none';
-  uiContainer.style.display = 'scroll';
+  uiContainer.style.overflow = 'scroll';
   uiContainer.style.overflowY = 'scroll';
   $('#gamePageContainer').append(uiContainer);
 
