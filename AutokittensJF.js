@@ -18,7 +18,7 @@ function buildUI() {
   uiContainer.className = 'dialog help';
   uiContainer.id = 'autoOptions';
   uiContainer.style.display = 'none';
-  uiContainer.style.overflow = 'scroll';
+  uiContainer.style.overflow = 'auto';
   uiContainer.style.overflowY = 'scroll';
   $('#gamePageContainer').append(uiContainer);
 
@@ -26,7 +26,7 @@ function buildUI() {
   calcContainer.className = 'dialog help';
   calcContainer.id = 'kittenCalcs';
   calcContainer.style.display = 'none';
-  calcContainer.style.overflow = 'scroll';
+  calcContainer.style.overflow = 'auto';
   calcContainer.style.overflowY = 'scroll';
   $('#gamePageContainer').append(calcContainer);
 }
